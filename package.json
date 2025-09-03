@@ -1,0 +1,32 @@
+{
+  "name": "novaiot-web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node server/api.mjs",
+    "start": "node server/api.mjs",
+    "mock:serve": "node scripts/mockServer.mjs",
+    "screenshots": "node scripts/captureScreenshots.mjs",
+    "screenshots:real": "BASE_URL=http://localhost START_MOCK=0 ADMIN_EMAIL=${ADMIN_EMAIL:-admin@example.com} ADMIN_PASSWORD=${ADMIN_PASSWORD:-admin123} node scripts/captureScreenshots.mjs",
+    "db:migrate": "node server/migrate.mjs",
+    "db:status": "node server/migrate-status.mjs",
+    "db:seed": "node server/seed.mjs",
+    "db:reset": "node -e \"process.exit(0)\" && node server/migrate.mjs && node server/seed.mjs",
+    "admin:create": "node server/cli/create-admin.mjs",
+    "seed:demo-orders": "node server/cli/seed-demo-orders.mjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.14.4"
+  },
+  "devDependencies": {
+    "puppeteer": "^22.15.0"
+  }
+}

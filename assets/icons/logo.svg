@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="NovaIoT">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="url(#g)"/>
+  <g transform="translate(28,30)">
+    <path d="M12 16h48a6 6 0 0 1 6 6l-4 40a10 10 0 0 1-10 9H20a10 10 0 0 1-10-9L6 22a6 6 0 0 1 6-6z" fill="white" opacity="0.95"/>
+    <path d="M22 16a14 14 0 0 1 28 0h6a20 20 0 0 0-40 0h6z" fill="#0b0c10" opacity="0.9"/>
+    <path d="M26 34h24v22a12 12 0 0 1-12 12h-0a12 12 0 0 1-12-12V34z" fill="#0ea5e9"/>
+  </g>
+</svg>
